@@ -10,16 +10,23 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand" href="{{pathFor 'mainPage'}}">Scrolling site</a>
+        <a class="navbar-brand" href="/#">{{dict 'site.title'}}</a>
       </div>
 
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="first" class="scroll-link">First</a></li>
+          <!--<li><a href="first" class="scroll-link">First</a></li>
           <li><a href="second" class="scroll-link">Second</a></li>
-          <li><a href="third" class="scroll-link">Third</a></li>
+          <li><a href="third" class="scroll-link">Third</a></li>-->
+          {{#each sections}}
+            {{> headerLink}}
+          {{/each}}
         </ul>
       </div>
     </div>
   </header>
+</template>
+
+<template name="headerLink">
+  <li><a href="{{id}}" class="scroll-link">{{title}}</a></li>
 </template>
