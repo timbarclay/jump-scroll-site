@@ -1,19 +1,22 @@
-.section {
+.section,
+.title-section {
   height: 100vh;
   width: 100%;
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#first {
+.title-section {
   background-color: #7470C1;
 }
 
-#second {
-  background-color: #5E5B95;
+.title-section {
+  text-align: center;
 }
 
-#third {
-  background-color: #5B957E;
+.title-section h1 {
+  font-size: 20vw;
 }
 
 .navbar-default {
