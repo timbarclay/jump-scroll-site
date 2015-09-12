@@ -1,3 +1,11 @@
+h1, h2 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 .section,
 .title-section {
   height: 100vh;
@@ -11,6 +19,9 @@
   -ms-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
 }
 
 .title-section {
@@ -28,4 +39,18 @@
 .navbar-default {
   background-color: rgba(248,248,248,0.8);
   border: none;
+}
+
+.overlay:before {
+  background-color: rgba(0,0,0,0.2);;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: '';
+  top: 0;
+}
+
+.overlay .container {
+  z-index: 2;
+  color: white;
 }

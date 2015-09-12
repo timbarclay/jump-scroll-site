@@ -12,3 +12,6 @@ fortawesome:fontawesome
 orionjs:bootstrap
 sacha:spin
 michalvalasek:autoform-bootstrap-colorpicker
+orionjs:filesystem
+vsivsi:orion-file-collection
+orionjs:image-attribute
