@@ -1,14 +1,8 @@
 <template name="titlePage">
-  <div class="title-section">
+  <div class="title-section overlay" style="background-image: url({{dict 'site.heroImage.url'}})">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="section-title">{{dict 'site.title' 'No title'}}</h1>
-        </div>
-        <div class="col-xs-12">
-          <p class="section-subtitle">{{dict 'site.description' 'No description'}}</p>
-        </div>
-      </div>
+      <h1 class="section-title">{{dict 'site.title' 'No title'}}</h1>
+      <p class="section-subtitle">{{dict 'site.description' 'No description'}}</p>
     </div>
   </div>
 </template>
