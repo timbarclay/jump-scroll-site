@@ -5,10 +5,10 @@ Template.header.events({
     var section = $("#" + path);
     window.history.pushState(path, "", "/" + path);
 
-    isScrolling = true;
+    Session.set('scrolling', true);
     $('html, body').animate({
       scrollTop: section.offset().top
-    }, 1000, function() { isScrolling = false;});
+    }, 1000, function() { Session.set('scrolling', false);});
   },
 
   'click .navbar-brand': function(){
@@ -17,5 +17,3 @@ Template.header.events({
     }, 500);
   }
 });
-
-isScrolling = false;
