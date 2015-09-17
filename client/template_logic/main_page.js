@@ -16,7 +16,7 @@ function scrollToPath(){
 function updateOnScroll(){
   $(window).on('scroll', function(){
     if(Session.get('scrolling')) return;
-    
+
     var sections = $('.section');
     var scrollPosition = window.pageYOffset;
     var pastSections = sections.filter(function(index, element){
